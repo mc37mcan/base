@@ -3,6 +3,8 @@ package youtube;
 public class Calc implements Add, Subtract {
 	
 	private String num = "1";
+	private int number;
+	private Calc two;
 	
 	public long subtract(long... ls) {
 		long ret = ls[0];
@@ -39,5 +41,14 @@ public class Calc implements Add, Subtract {
 
 	public void methNoReturn(){
 		System.out.println("Hi");
+	}
+	
+	public int getInt(){
+		return number;
+	}
+	public void objSet(){
+		if(number ==1){
+		two = new Calc();
+		}
 	}
 }

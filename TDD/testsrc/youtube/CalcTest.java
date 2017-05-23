@@ -48,8 +48,8 @@ public class CalcTest {
 	}
 	
 	@Test
-	public void testNoReturn(){
-		calculate.methNoReturn();
-		assert
+	public void testInt(){
+		assertEquals(0,calculate.getInt());
 	}
+	
 }
