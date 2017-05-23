@@ -28,5 +28,28 @@ public class CalcTest {
 		long sum =  3 + 5 + 3;
 		assertEquals(sum,calculate.add(3,5,3));
 	}
-
+	
+	@Test
+	public void retuTest(){
+		assertEquals(0,calculate.retu());
+	}
+	
+		
+	@Test
+	public void retString(){
+		assertEquals("1",calculate.retuString());
+	}
+	
+	@Test
+	public void setTest(){
+		calculate.setString("hi");
+		assertEquals("hi",calculate.retuString());
+		
+	}
+	
+	@Test
+	public void testNoReturn(){
+		calculate.methNoReturn();
+		assert
+	}
 }

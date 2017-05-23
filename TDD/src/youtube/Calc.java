@@ -1,7 +1,9 @@
 package youtube;
 
 public class Calc implements Add, Subtract {
-
+	
+	private String num = "1";
+	
 	public long subtract(long... ls) {
 		long ret = ls[0];
 		
@@ -22,5 +24,20 @@ public class Calc implements Add, Subtract {
 		// TODO Auto-generated method stub
 
 	}
+	
+	public int retu(){
+		return 0;
+	}
+	
+	public String retuString(){
+		return num;
+	}
+	
+	public void setString(String a){
+		num = a;
+	}
 
+	public void methNoReturn(){
+		System.out.println("Hi");
+	}
 }
